@@ -1,0 +1,26 @@
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+    setlocale(0,"");
+    int x;
+    cout << "Написать программу решения поставленной задачи (case). Составить программу, позволяющую по последней цифре данного числа определить последнюю цифру куба этого числа. Введите число" <<endl;
+    cin >>x;
+    cout << "Последняя цифра куба данного числа ";
+    switch (x%10) {
+           case 1:cout << "= 1"<<endl;break;
+           case 2:cout << "= 8"<<endl;break;
+           case 3:cout << "= 7"<<endl;break;
+           case 4:cout << "= 4"<<endl;break;
+           case 5:cout << "= 5"<<endl;break;
+           case 6:cout << "= 6"<<endl;break;
+           case 7:cout << "= 3"<<endl;break;
+           case 8:cout << "= 2"<<endl;break;
+           case 9:cout << "= 9"<<endl;break;
+           }
+    system("PAUSE");
+    return EXIT_SUCCESS;
+}
